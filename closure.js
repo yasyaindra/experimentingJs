@@ -8,8 +8,6 @@
 // let panggilNama = init()
 // panggilNama('Afifan')
 // panggilNama('Maulana')
-
-
 function add(){
     let counter = 0;
     return function() {
@@ -17,10 +15,10 @@ function add(){
     }
 }
 
-counter = 12
+counter = 12        /* it won't affect the output of                 sequencing counter*/
 
 let a = add()
-console.log(a())
-console.log(a())
-console.log(a())
-console.log(a())
+console.log(a())    /*1*/
+console.log(a())   /*2*/
+console.log(a())  /*3*/
+console.log(a()) /*4*/
